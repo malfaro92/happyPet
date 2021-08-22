@@ -77,6 +77,7 @@ public class Principal extends javax.swing.JFrame {
             idUnico = "000" + contadorEspecie;
         }
         jTextField37.setText(idUnico);
+        jTextField37.setText(idUnico);
     }
 
     public void traerInfoPropietario(String m, NodoPropietario aux) {

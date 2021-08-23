@@ -133,9 +133,7 @@ public class ListaMascotas {
             } else {
                 ModificaRecursivo(m, aux.getSiguiente());
             }
-        } else {
-            System.out.println("La especie no existe");
-        }
+        } 
 
     }
 

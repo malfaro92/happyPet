@@ -126,8 +126,6 @@ public class ListaPropietarios {
                 ModificaRecursivo(p, aux.getSiguiente());
                 }
         }
-        else{
-        System.out.println("El propietario no existe");}
                   
     }
     

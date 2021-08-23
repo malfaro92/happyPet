@@ -1340,12 +1340,14 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        //INACTIVA USUARIOS
         c.inactivarUsuario(jTextField11.getText());
         c.imprimir();
         jTextField11.setText("");
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        //INACTIVA PROPIETARIOS
         aux = lp.getCabeza();
         lp.InactivaRecursivo(jTextField12.getText(), aux, ac, raizc);
         System.out.println(lp.toString());
@@ -1353,6 +1355,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        //INSERTA PROPIETARIOS
         aux = lp.getCabeza();
 //        System.out.println(lp.insertaRecursivo(new Propietarios(jTextField5.getText(), jTextField6.getText(), jTextField7.getText(), jTextField8.getText(), Integer.valueOf(jTextField9.getText()), jTextField10.getText(), jComboBox2.getSelectedItem().toString()), aux));
 //        System.out.println(lp.toString());
@@ -1376,6 +1379,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        //INSERTA ESPECIES
+        
         aux2 = le.getCabeza();
 
         System.out.println(le.insertaRecursivo(new Especie(parseInt(jTextField37.getText()), jTextField20.getText(), jTextField21.getText(), jComboBox2.getSelectedItem().toString()), aux2));
@@ -1401,6 +1406,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox5ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // INACTIVA ESPECIES
         le.inactivaRecursivo(jTextField23.getText(), aux2, ac, raizc);
         System.out.println(le.toString());
 
@@ -1412,6 +1418,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox7ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        //INACTIVA MASCOTAS
         aux3 = lm.getCabezam();
 
         lm.inactivaRecursivom(jTextField30.getText(), aux3, ac, raizc);
@@ -1423,6 +1430,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox6ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        //INSERTA MASCOTAS
+        
         aux3 = lm.getCabezam();
 
         System.out.println(lm.insertaRecursivo(new Mascotas("Susy", "31 diciembre", "Activo", "gato", "Rojas"), aux3, le, lp));
@@ -1477,7 +1486,7 @@ public class Principal extends javax.swing.JFrame {
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         //MODIFICA ESPECIES
         aux2 = le.getCabeza();
-        le.ModificaRecursivo(new Especie(parseInt(jTextField37.getText()), jTextField24.getText(), jTextField25.getText(), jComboBox5.getSelectedItem().toString()), aux2);
+        le.ModificaRecursivo(new Especie(parseInt(jTextField19.getText()), jTextField24.getText(), jTextField25.getText(), jComboBox5.getSelectedItem().toString()), aux2);
         System.out.println(le.toString());
     }//GEN-LAST:event_jButton10ActionPerformed
 

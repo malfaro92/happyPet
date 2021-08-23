@@ -176,8 +176,7 @@ public class ListaEspecies {
             } else {
                 ModificaRecursivo(e, aux.getNext());
             }
-        } else {
-            System.out.println("El codigo para esa especie no existe");
+        
         }
     }
 
